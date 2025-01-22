@@ -12,12 +12,12 @@ export default function About() {
           </CardHeader>
           <CardContent>
             <p className="mb-4">
-              Soy un desarrollador web con [X] años de experiencia en la creación de aplicaciones web modernas y
+              Soy un desarrollador web con 21 años de experiencia en la creación de aplicaciones web modernas y
               responsivas. Mi pasión por la tecnología y el diseño me impulsa a estar siempre aprendiendo y mejorando
               mis habilidades.
             </p>
             <p>
-              Fuera del mundo del desarrollo, disfruto [tus hobbies o intereses]. Creo que estas actividades
+              Fuera del mundo del desarrollo, disfruto de la creacion de contenido y edicion de videos o creacion de personajes 3D. Creo que estas actividades
               complementan mi trabajo al fomentar la creatividad y el pensamiento innovador.
             </p>
           </CardContent>

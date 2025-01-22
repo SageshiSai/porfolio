@@ -8,7 +8,6 @@ const skills = [
   "React",
   "Next.js",
   "Node.js",
-  "Express",
   "MongoDB",
   "SQL",
   "Git",
