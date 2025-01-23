@@ -6,28 +6,28 @@ const projects = [
   {
     title: "NeoBank",
     description: "Pequeño proyecto dedicado a un neobanco, el cual me aprecio una buena ida hacerlo, con junto a la parte de banco para mantener dinero dentro y la posibilidad de invertir dentro de el mismamente.",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/FotoPlantillaWeb.png?height=auto&width=auto",
     demoLink: "#",
     codeLink: "#",
   },
   {
     title: "Agencia de viajes",
     description: "Un proyecto que he vuelto a crear, ya que me gusto la idea de cuando lo hice en el grado con mis compañeros. Un proyecto con bastantes caracteristicas y interacciones con el ususario, intuitivo y facil de usar.",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/FFFFFF.png?height=auto&width=auto",
     demoLink: "#",
     codeLink: "#",
   },
   {
     title: "Tienda de ropa",
     description: "Mi primer pedido, parte de un familiar, el cual necesitaba una tienda online la cual pudiera subir todo el tipo de ropa que puede dar o arreglar ya que es consturera, un proyecto que me gsuto bastante.",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/FFFFFF.png?height=auto&width=auto",
     demoLink: "#",
     codeLink: "#",
   },
   {
     title: "TPV",
     description: "Un proyecto el cual me pidieron tambien, un tpv para hosteleria pero que tambien se puede usar en otras empresas, pero em principio es unicamente para TPV.",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/FFFFFF.png?height=auto&width=auto",
     demoLink: "#",
     codeLink: "#",
   },
@@ -46,11 +46,13 @@ export default function Projects() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src={project.image || "/placeholder.svg"}
+                  src={project.image || "/FFFFFF.png"}
                   alt={project.title}
                   width={300}
                   height={200}
                   className="rounded-md mb-4"
+                  style={{ width: 'auto', height: 'auto' }}
+                  priority
                 />
                 <CardDescription>{project.description}</CardDescription>
               </CardContent>
