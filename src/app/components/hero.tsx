@@ -11,7 +11,7 @@ export default function Hero() {
         <source src="/assets/0001-0750.mp4" type="video/mp4" />
         Tu navegador no soporta el elemento de video.
       </video>
-      <div className="absolute inset-0 bg-background/40 backdrop-blur-sm"></div>
+      <div className="absolute inset-0 bg-background/30 backdrop-blur-sm"></div>
       <div className="relative z-10 px-4">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">Hola, soy Kevin Patiño</h1>
         <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-foreground">
