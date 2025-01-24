@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Link from "next/link";
 import { ArrowRight } from "lucide-react"
 
 export default function Hero() {
@@ -17,9 +18,11 @@ export default function Hero() {
         <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-foreground">
           Desarrollador web apasionado por crear experiencias digitales increíbles
         </p>
-        <Button size="lg">
-          Ver mis proyectos <ArrowRight className="ml-2" />
-        </Button>
+        <Link href="#projects">
+          <Button size="lg">
+            Ver mis proyectos <ArrowRight className="ml-2" />
+          </Button>
+        </Link>
       </div>
     </section>
   )
