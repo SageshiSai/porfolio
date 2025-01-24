@@ -16,7 +16,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/30 backdrop-blur-sm">
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="#home" className="text-2xl font-bold">
           Kevin Leonardo Patiño Sanchez

@@ -8,9 +8,17 @@ const skills = [
   "React",
   "Next.js",
   "Node.js",
-  "MongoDB",
   "SQL",
   "Git",
+  "Java",
+  "Angular",
+  "Spring Boot",
+  "Python",
+  "PHP",
+  "MySQL",
+  "JQuery",
+  "Bootstrap",
+  "Tailwind CSS",
   "Responsive Design",
 ]
 
