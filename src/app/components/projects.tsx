@@ -27,7 +27,7 @@ const projects = [
   {
     title: "TPV",
     description: "Un proyecto el cual me pidieron tambien, un tpv para hosteleria pero que tambien se puede usar en otras empresas, pero em principio es unicamente para TPV.",
-    image: "/FFFFFF.png?height=auto&width=auto",
+    image: "/TPVIMG.png?height=auto&width=auto",
     demoLink: "#",
     codeLink: "#",
   },
