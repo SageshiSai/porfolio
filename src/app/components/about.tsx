@@ -31,7 +31,7 @@ export default function About() {
             personal, buscando siempre oportunidades para crecer y mejorar en cada proyecto.
             </p>
             <p className="mb-4">
-              Fuera del mundo del desarrollo, disfruto de la creacion de contenido y edicion de videos o creacion de personajes 3D, a la par que hobbies como tocar la guitarra electrica y hacer deporte.
+            💎 Fuera del mundo del desarrollo, disfruto de la creacion de contenido y edicion de videos o creacion de personajes 3D, a la par que hobbies como tocar la guitarra electrica y hacer deporte.
               Creo que estas actividades
               complementan mi trabajo al fomentar la creatividad y el pensamiento innovador.
             </p>
