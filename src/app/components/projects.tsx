@@ -18,8 +18,15 @@ const projects = [
     codeLink: "#",
   },
   {
-    title: "Tienda de ropa",
+    title: "Tienda de ropa (En proceso)",
     description: "Mi primer pedido, parte de un familiar, el cual necesitaba una tienda online la cual pudiera subir todo el tipo de ropa que puede dar o arreglar ya que es consturera, un proyecto que me gsuto bastante.",
+    image: "/FFFFFF.png?height=auto&width=auto",
+    demoLink: "#",
+    codeLink: "#",
+  },
+  {
+    title: "Inmobiliaria (En proceso)",
+    description: "Gran proyecto que tengo pendiente para hacer gracias a un curso en le que estoy metido, un proyecto que me gusta bastante y que me gustaria hacerlo para poder tenerlo en mi portafolio y ganar a un más experiencia.",
     image: "/FFFFFF.png?height=auto&width=auto",
     demoLink: "#",
     codeLink: "#",
