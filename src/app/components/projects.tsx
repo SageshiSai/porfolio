@@ -53,7 +53,7 @@ export default function Projects() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src={project.image || "/FFFFFF.png"}
+                  src={project.image || "/CommingSoon.png"}
                   alt={project.title}
                   width={300}
                   height={200}
