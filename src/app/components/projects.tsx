@@ -69,11 +69,12 @@ export default function Projects() {
                     Demo
                   </a>
                 </Button>
+                {/*
                 <Button variant="outline" asChild>
                   <a href={project.codeLink} target="_blank" rel="noopener noreferrer">
                     Código
                   </a>
-                </Button>
+                </Button> */}
               </CardFooter>
             </Card>
           ))}
