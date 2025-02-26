@@ -9,6 +9,7 @@ const projects = [
     image: "/FotoPlantillaWeb.png?height=auto&width=auto",
     demoLink: "#",
     codeLink: "#",
+    TechStack: "NextJS, TailwindCSS, TypeScript, Java jakarta, Hibernate, MySQL, Spring (validations, Security, Web), Vercel, Angular, Ionic, Git, Github, Postman, Figma, NodeJS, dbdiagram.io",
   },
   {
     title: "Agencia de viajes | KEBIGO",
@@ -16,6 +17,7 @@ const projects = [
     image: "/ProyectoViajes.png?height=auto&width=auto",
     demoLink: "#",
     codeLink: "#",
+    TechStack: "JavaScript, HTML, CSS, Bootstrap, PHP, MySQL, Git, Github, Figma, NodeJS",
   },
   {
     title: "Tienda de ropa (En proceso)",
@@ -23,6 +25,7 @@ const projects = [
     image: "/CommingSoon.png?height=auto&width=auto",
     demoLink: "#",
     codeLink: "#",
+    TechStack: "Angular, TypeScript, TailwindCSS, Java Jakarta, Hibernate, MySQL, Spring (validations, Security, Web), Vercel, Git, Github, Postman, Figma, NodeJS, dbdiagram.io",
   },
   {
     title: "Inmobiliaria (En proceso)",
@@ -30,13 +33,15 @@ const projects = [
     image: "/CommingSoon.png?height=auto&width=auto",
     demoLink: "#",
     codeLink: "#",
+    TechStack: "TailwindCSS, TypeScript, Java jakarta, Hibernate, MySQL, Spring (validations, Security, Web), Vercel, Angular, Git, Github, Postman, Figma, NodeJS, dbdiagram.io",
   },
   {
     title: "TPV",
-    description: "Un proyecto el cual me pidieron tambien, un tpv para hosteleria pero que tambien se puede usar en otras empresas, pero em principio es unicamente para TPV.",
+    description: "Un proyecto el cual me pidieron tambien, un tpv para hosteleria pero que tambien se puede usar en otras empresas, pero en principio es unicamente para TPV.",
     image: "/TPVIMG.png?height=auto&width=auto",
     demoLink: "#",
     codeLink: "#",
+    TechStack: "HTML, CSS, JavaScript, Bootstrap, MySQL, Git, Github, Figma",
   },
 ]
 
@@ -45,6 +50,16 @@ export default function Projects() {
     <section id="projects" className="py-20 bg-accent">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-center">Mis proyectos</h2>
+        <p className="text-center mb-8 bg-background/90 p-4 rounded-md">
+          <b>
+            NOTA: <br />
+          </b>
+          Los proyectos aún no están subidos!! Por lo que no se puede ver una demo. Con el paso del tiempo podré ir subiendo uno a uno para que se puedan ver los trabajos. 😊
+          Pero muy probablemente llegue antes un nuevo apartado para cada uno de estos mas detallado, con esto me refiero a que pasare imagenes 
+          de lo que haya hecho tanto en figma para la UI de cada uno de estos proyectos, como el diagrama de la base de datos dependiendo de que tan importante sea el proyecto,
+          en dado caso como el neobanco no creo que pase la base de datos porque siento que es un poco privado de mi parte ya que es un proyecto muy personal.
+          <br /><b> Ultima actualización del porfolio:</b> 26/02/2025 9:53
+        </p> 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <Card key={index}>
@@ -62,6 +77,7 @@ export default function Projects() {
                   priority
                 />
                 <CardDescription>{project.description}</CardDescription>
+                <CardDescription className="text-sm mt-4"><b>TechStack: <br /></b>{project.TechStack}</CardDescription>
               </CardContent>
               <CardFooter className="flex justify-between">
                 <Button variant="outline" asChild>
