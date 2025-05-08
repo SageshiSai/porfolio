@@ -29,14 +29,14 @@ const projects = [
   },
   {
     title: "Inmobiliaria",
-    description: "Gran proyecto que tengo pendiente para hacer gracias a un curso en le que estoy metido, un proyecto que me gusta bastante y que me gustaria hacerlo para poder tenerlo en mi portafolio y ganar a un más experiencia.",
+    description: "Gran proyecto que estoy actualizando y mejorando actualmente. Un proyecto que me está ayudando mucho a aprender y a seguir mejorando mis tecnicas de Clean Code y de arquitectura de software.",
     image: "/elPisito.png?height=auto&width=auto",
     demoLink: "#",
     codeLink: "#",
     TechStack: "TailwindCSS, TypeScript, Java jakarta, Hibernate, MySQL, Spring (validations, Security, Web), Vercel, Angular, Git, Github, Postman, Figma, NodeJS, dbdiagram.io",
   },
   {
-    title: "TPV",
+    title: "TPV Hosteleria",
     description: "Un proyecto el cual me pidieron tambien, un tpv para hosteleria pero que tambien se puede usar en otras empresas, pero en principio es unicamente para TPV.",
     image: "/TPVIMG.png?height=auto&width=auto",
     demoLink: "#",
