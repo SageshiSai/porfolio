@@ -28,9 +28,9 @@ const projects = [
     TechStack: "Angular, TypeScript, TailwindCSS, Java Jakarta, Hibernate, MySQL, Spring (validations, Security, Web), Vercel, Git, Github, Postman, Figma, NodeJS, dbdiagram.io",
   },
   {
-    title: "Inmobiliaria (En proceso)",
+    title: "Inmobiliaria",
     description: "Gran proyecto que tengo pendiente para hacer gracias a un curso en le que estoy metido, un proyecto que me gusta bastante y que me gustaria hacerlo para poder tenerlo en mi portafolio y ganar a un más experiencia.",
-    image: "/CommingSoon.png?height=auto&width=auto",
+    image: "/elPisito.png?height=auto&width=auto",
     demoLink: "#",
     codeLink: "#",
     TechStack: "TailwindCSS, TypeScript, Java jakarta, Hibernate, MySQL, Spring (validations, Security, Web), Vercel, Angular, Git, Github, Postman, Figma, NodeJS, dbdiagram.io",
@@ -58,7 +58,7 @@ export default function Projects() {
           Pero muy probablemente llegue antes un nuevo apartado para cada uno de estos mas detallado, con esto me refiero a que pasare imagenes 
           de lo que haya hecho tanto en figma para la UI de cada uno de estos proyectos, como el diagrama de la base de datos dependiendo de que tan importante sea el proyecto,
           en dado caso como el neobanco no creo que pase la base de datos porque siento que es un poco privado de mi parte ya que es un proyecto muy personal.
-          <br /><b> Ultima actualización del porfolio:</b> 26/02/2025 9:53
+          <br /><b> Ultima actualización del porfolio:</b> 08/05/2025 11:17
         </p> 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
