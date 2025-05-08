@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 
 const projects = [
   {
+    number: 1,
     title: "NeoBanco | NBSage",
     description: "Pequeño proyecto dedicado a un neobanco, el cual me aprecio una buena ida hacerlo, con junto a la parte de banco para mantener dinero dentro y la posibilidad de invertir dentro de el mismamente.",
     image: "/FotoPlantillaWeb.png?height=auto&width=auto",
@@ -12,6 +13,7 @@ const projects = [
     TechStack: "NextJS, TailwindCSS, TypeScript, Java jakarta, Hibernate, MySQL, Spring (validations, Security, Web), Vercel, Angular, Ionic, Git, Github, Postman, Figma, NodeJS, dbdiagram.io",
   },
   {
+    number: 2,
     title: "Agencia de viajes | KEBIGO",
     description: "Un proyecto que he vuelto a crear, ya que me gusto la idea de cuando lo hice en el grado con mis compañeros. Un proyecto con bastantes caracteristicas y interacciones con el ususario, intuitivo y facil de usar.",
     image: "/ProyectoViajes.png?height=auto&width=auto",
@@ -20,6 +22,7 @@ const projects = [
     TechStack: "JavaScript, HTML, CSS, Bootstrap, PHP, MySQL, Git, Github, Figma, NodeJS",
   },
   {
+    number: 3,
     title: "Tienda de ropa (En proceso)",
     description: "Mi primer pedido, parte de un familiar, el cual necesitaba una tienda online la cual pudiera subir todo el tipo de ropa que puede dar o arreglar ya que es consturera, un proyecto que me gsuto bastante.",
     image: "/CommingSoon.png?height=auto&width=auto",
@@ -28,6 +31,7 @@ const projects = [
     TechStack: "Angular, TypeScript, TailwindCSS, Java Jakarta, Hibernate, MySQL, Spring (validations, Security, Web), Vercel, Git, Github, Postman, Figma, NodeJS, dbdiagram.io",
   },
   {
+    number: 4,
     title: "Inmobiliaria",
     description: "Gran proyecto que estoy actualizando y mejorando actualmente. Un proyecto que me está ayudando mucho a aprender y a seguir mejorando mis tecnicas de Clean Code y de arquitectura de software.",
     image: "/elPisito.png?height=auto&width=auto",
@@ -36,6 +40,7 @@ const projects = [
     TechStack: "TailwindCSS, TypeScript, Java jakarta, Hibernate, MySQL, Spring (validations, Security, Web), Vercel, Angular, Git, Github, Postman, Figma, NodeJS, dbdiagram.io",
   },
   {
+    number: 5,
     title: "TPV Hosteleria",
     description: "Un proyecto el cual me pidieron tambien, un tpv para hosteleria pero que tambien se puede usar en otras empresas, pero en principio es unicamente para TPV.",
     image: "/TPVIMG.png?height=auto&width=auto",
@@ -61,8 +66,8 @@ export default function Projects() {
           <br /><b> Ultima actualización del porfolio:</b> 08/05/2025 11:17
         </p> 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <Card key={index}>
+          {projects.map((project) => (
+            <Card key={project.number} className="bg-background/90 shadow-lg transition-transform transform hover:scale-105 duration-300">
               <CardHeader>
                 <CardTitle>{project.title}</CardTitle>
               </CardHeader>
