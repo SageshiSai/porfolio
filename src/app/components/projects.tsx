@@ -66,7 +66,7 @@ export default function Projects() {
             Pero muy probablemente llegue antes un nuevo apartado para cada uno de estos mas detallado, con esto me refiero a que pasare imagenes 
             de lo que haya hecho tanto en figma para la UI de cada uno de estos proyectos, como el diagrama de la base de datos dependiendo de que tan importante sea el proyecto,
             en dado caso como el neobanco no creo que pase la base de datos porque siento que es un poco privado de mi parte ya que es un proyecto muy personal.
-            <br /><b> Ultima actualización del porfolio:</b> 08/05/2025 11:17
+            <br /><b> Ultima actualización del porfolio:</b> 17/05/2025 15:28
             </CardContent>
           </Card>
         </div>

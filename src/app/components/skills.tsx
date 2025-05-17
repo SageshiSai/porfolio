@@ -13,7 +13,6 @@ const skills = [
       "JQuery",
       "Bootstrap",
       "Tailwind CSS",
-      "Responsive Design",
     ],
   },
   {
