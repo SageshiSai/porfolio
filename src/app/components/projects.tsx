@@ -71,40 +71,42 @@ export default function Projects() {
           </Card>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {projects.map((project) => (
-            <ProjectCard key={project.number} className="bg-background/90 shadow-lg transition-transform transform hover:scale-105 duration-300">
-              <CardHeader>
-                <CardTitle>{project.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src={project.image || "/CommingSoon.png"}
-                  alt={project.title}
-                  width={300}
-                  height={200}
-                  className="rounded-md mb-4"
-                  style={{ width: 'auto', height: 'auto' }}
-                  priority
-                />
-                <CardDescription>{project.description}</CardDescription>
-                <CardDescription className="text-sm mt-4"><b>TechStack: <br /></b>{project.TechStack}</CardDescription>
-              </CardContent>
-              <CardFooter className="flex justify-between">
-                <Button variant="outline" asChild>
-                  <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
-                    Demo
-                  </a>
-                </Button>
-                {/*
-                <Button variant="outline" asChild>
-                  <a href={project.codeLink} target="_blank" rel="noopener noreferrer">
-                    Código
-                  </a>
-                </Button> */}
-              </CardFooter>
-            </ProjectCard>
-          ))}
+        <div className="flex justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {projects.map((project) => (
+              <ProjectCard key={project.number} className="bg-background/90 shadow-lg transition-transform transform hover:scale-105 duration-300">
+          <CardHeader>
+            <CardTitle>{project.title}</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Image
+              src={project.image || "/CommingSoon.png"}
+              alt={project.title}
+              width={300}
+              height={200}
+              className="rounded-md mb-4"
+              style={{ width: 'auto', height: 'auto' }}
+              priority
+            />
+            <CardDescription>{project.description}</CardDescription>
+            <CardDescription className="text-sm mt-4"><b>TechStack: <br /></b>{project.TechStack}</CardDescription>
+          </CardContent>
+          <CardFooter className="flex justify-between">
+            <Button variant="outline" asChild>
+              <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
+                Demo
+              </a>
+            </Button>
+            {/* 
+            <Button variant="outline" asChild>
+              <a href={project.codeLink} target="_blank" rel="noopener noreferrer">
+                Código
+              </a>
+            </Button> */}
+          </CardFooter>
+              </ProjectCard>
+            ))}
+          </div>
         </div>
       </div>
     </section>
