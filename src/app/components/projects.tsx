@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle, ProjectCard  } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 
 const projects = [
@@ -54,20 +54,26 @@ export default function Projects() {
   return (
     <section id="projects" className="py-20 bg-accent">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 text-center">Mis proyectos</h2>
-        <p className="text-center mb-8 bg-background/90 p-4 rounded-md">
-          <b>
-            NOTA: <br />
-          </b>
-          Los proyectos aún no están subidos!! Por lo que no se puede ver una demo. Con el paso del tiempo podré ir subiendo uno a uno para que se puedan ver los trabajos. 😊
-          Pero muy probablemente llegue antes un nuevo apartado para cada uno de estos mas detallado, con esto me refiero a que pasare imagenes 
-          de lo que haya hecho tanto en figma para la UI de cada uno de estos proyectos, como el diagrama de la base de datos dependiendo de que tan importante sea el proyecto,
-          en dado caso como el neobanco no creo que pase la base de datos porque siento que es un poco privado de mi parte ya que es un proyecto muy personal.
-          <br /><b> Ultima actualización del porfolio:</b> 08/05/2025 11:17
-        </p> 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <h2 className="text-3xl font-bold mb-8 flex justify-center">Mis proyectos</h2>
+        <div className="mb-8 flex justify-center">
+          <Card >
+            <CardHeader>
+              <CardTitle>  NOTA:</CardTitle>
+              <CardDescription>Pequeña nota aclarando sobre las demos</CardDescription>
+            </CardHeader>
+            <CardContent >
+            Los proyectos aún no están subidos!! Por lo que no se puede ver una demo. Con el paso del tiempo podré ir subiendo uno a uno para que se puedan ver los trabajos. 😊
+            Pero muy probablemente llegue antes un nuevo apartado para cada uno de estos mas detallado, con esto me refiero a que pasare imagenes 
+            de lo que haya hecho tanto en figma para la UI de cada uno de estos proyectos, como el diagrama de la base de datos dependiendo de que tan importante sea el proyecto,
+            en dado caso como el neobanco no creo que pase la base de datos porque siento que es un poco privado de mi parte ya que es un proyecto muy personal.
+            <br /><b> Ultima actualización del porfolio:</b> 08/05/2025 11:17
+            </CardContent>
+          </Card>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {projects.map((project) => (
-            <Card key={project.number} className="bg-background/90 shadow-lg transition-transform transform hover:scale-105 duration-300">
+            <ProjectCard key={project.number} className="bg-background/90 shadow-lg transition-transform transform hover:scale-105 duration-300">
               <CardHeader>
                 <CardTitle>{project.title}</CardTitle>
               </CardHeader>
@@ -97,7 +103,7 @@ export default function Projects() {
                   </a>
                 </Button> */}
               </CardFooter>
-            </Card>
+            </ProjectCard>
           ))}
         </div>
       </div>

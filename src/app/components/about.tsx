@@ -3,14 +3,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 export default function About() {
   return (
     <section id="about" className="py-20 bg-accent">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 flex justify-center items-center flex-col">
         <h2 className="text-3xl font-bold mb-8 text-center">Sobre mí</h2>
         <Card>
           <CardHeader>
             <CardTitle>Mi historia</CardTitle>
             <CardDescription>Un vistazo a mi trayectoria profesional</CardDescription>
           </CardHeader>
-          <CardContent>
+          <CardContent >
             <p className="mb-4">
             Desarrollador Full Stack con un grado superior en Desarrollo Web del CIFP ZORNOTZA LHII. A lo largo de mi carrera, he tenido la 
             oportunidad de trabajar junto a un equipo de desarrolladores, lo que ha fortalecido mi capacidad para colaborar y adaptarme a 
