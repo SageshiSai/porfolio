@@ -24,7 +24,7 @@ const SkillsCard = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "rounded-xl border bg-card text-card-foreground shadow w-auto max-w-sm max-h-96",
+      "rounded-xl border bg-card text-card-foreground shadow w-auto max-w-md max-h-96",
       className
     )}
     {...props}
