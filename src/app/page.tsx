@@ -5,15 +5,20 @@ import Skills from "./components/skills"
 import Projects from "./components/projects"
 import Contact from "./components/contact"
 import Footer from "./components/footer"
+import {AuroraBackground} from "../components/ui/aurora-background"
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground overflow-hidden">
       <Header />
       <main>
         <Hero />
         <About />
-        <Skills />
+        <AuroraBackground>
+          <div className="bg-black w-full h-screen overflow-hidden">
+            <Skills />
+          </div>
+        </AuroraBackground>
         <Projects />
         <Contact />
       </main>
