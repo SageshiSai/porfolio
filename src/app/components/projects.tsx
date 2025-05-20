@@ -48,6 +48,15 @@ const projects = [
     codeLink: "#",
     TechStack: "HTML, CSS, JavaScript, Bootstrap, MySQL, Git, Github, Figma",
   },
+  {
+    number: 6,
+    title: "BarberShop",
+    description: "Pagina web dedicada a una peluqueria/Barberia, la cual fue un trabajo de la empresa en la que estuve, donde me pidieron que hiciera una pagina web para ellos, un proyecto sencillo pero que me gusto mucho.",
+    image: "/BarberShop_web.png?height=auto&width=auto",
+    demoLink: "https://forutxuileart.com/",
+    codeLink: "#",
+    TechStack: "WordPress",
+  },
 ]
 
 export default function Projects() {
@@ -66,7 +75,7 @@ export default function Projects() {
             Pero muy probablemente llegue antes un nuevo apartado para cada uno de estos mas detallado, con esto me refiero a que pasare imagenes 
             de lo que haya hecho tanto en figma para la UI de cada uno de estos proyectos, como el diagrama de la base de datos dependiendo de que tan importante sea el proyecto,
             en dado caso como el neobanco no creo que pase la base de datos porque siento que es un poco privado de mi parte ya que es un proyecto muy personal.
-            <br /><b> Ultima actualización del porfolio:</b> 17/05/2025 15:28
+            <br /><b> Ultima actualización del porfolio:</b> 20/05/2025 15:54
             </CardContent>
           </Card>
         </div>
@@ -93,9 +102,13 @@ export default function Projects() {
           </CardContent>
           <CardFooter className="flex justify-between">
             <Button variant="outline" asChild>
-              <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
-                Demo
-              </a>
+                {project.demoLink.includes("https") ? (
+                <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
+                  Link
+                </a> 
+                ) : (
+                <span className="text-gray-500">Demo no disponible</span>
+                )}
             </Button>
             {/* 
             <Button variant="outline" asChild>

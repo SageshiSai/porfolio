@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link";
-import { ArrowRight } from "lucide-react"
+import { ArrowBigDownDash, ArrowRight } from "lucide-react"
 import styles from "./css/VideoMask.module.css"
 import Typewriter from "@/components/typewriter";
 
@@ -37,11 +37,19 @@ export default function Hero() {
         <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-foreground text-gray-300">
           Desarrollador web especializado en crear experiencias digitales increíbles
         </p>
-        <Link href="#projects">
-          <Button size="lg" className="bg-accent text-foreground hover:bg-teal-500 transition duration-200">
-            Ver mis proyectos <ArrowRight className="ml-2" />
-          </Button>
-        </Link>
+        <div className="flex flex-col md:flex-row gap-4 justify-center">
+          <Link href="#projects">
+            <Button size="lg" className="bg-accent text-foreground hover:bg-teal-500 transition duration-200">
+              Ver mis proyectos <ArrowRight className="ml-2" />
+            </Button>
+          </Link>
+          <a href="/assets/CV Kevin Patiño.pdf" download={true}>
+            <Button size="lg" className="bg-accent text-foreground hover:bg-teal-500 transition duration-200">
+              Descargar mi CV <ArrowBigDownDash className="ml-2" />
+            </Button>
+          </a>
+        </div>
+        
       </div>
     </section>
   )
