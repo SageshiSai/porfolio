@@ -128,18 +128,16 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20">
+    <section id="skills" className="py-20 " >
     <h2 className="text-3xl font-bold mb-8 text-center text-white">Mis habilidades</h2>
-    <div className="container mx-auto px-4 flex gap-8 flex-wrap justify-center max-w-7xl">
+    <div className="container mx-auto px-4 flex gap-8 flex-wrap justify-center max-w-7xl h-fit">
       {skills.map((skillCategory) => (
         <SkillsCard key={skillCategory.category}>
           <CardHeader>
             <CardTitle className="flex justify-center font-bold text-2xl">{skillCategory.category}</CardTitle>
             <CardDescription></CardDescription>
           </CardHeader>
-        
-          
-          <CardContent  >
+          <CardContent >
             <div className="flex flex-wrap justify-center">
             {skillCategory.items.map((skill) => (
               <CardContent key={skill.number} className="flex p-2">

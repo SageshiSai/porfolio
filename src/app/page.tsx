@@ -14,8 +14,8 @@ export default function Portfolio() {
       <main>
         <Hero />
         <About />
-        <AuroraBackground>
-          <div className="bg-black w-full h-screen overflow-hidden">
+        <AuroraBackground className="h-full">
+          <div className="bg-black w-full h-full mb:h-5/6">
             <Skills />
           </div>
         </AuroraBackground>
