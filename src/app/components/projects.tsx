@@ -28,7 +28,7 @@ const projects = [
     image: "/CommingSoon.png?height=auto&width=auto",
     demoLink: "#",
     codeLink: "#",
-    TechStack: "Angular, TypeScript, TailwindCSS, Java Jakarta, Hibernate, MySQL, Spring (validations, Security, Web), Vercel, Git, Github, Postman, Figma, NodeJS, dbdiagram.io",
+    TechStack: "Angular, TypeScript, TailwindCSS, Git, Github, Postman, Figma, NodeJS, dbdiagram.io",
   },
   {
     number: 4,
