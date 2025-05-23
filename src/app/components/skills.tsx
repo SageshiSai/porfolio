@@ -150,7 +150,7 @@ export default function Skills() {
                   style={{ width: '30', height: '30' }}
                   priority />
                     <Badge key={skill.name} variant="secondary" className="text-lg py-2 px-2">
-                      {skill.name}
+                      {/*skill.name*/}
                     </Badge>
               </CardContent>
               ))}

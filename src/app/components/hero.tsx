@@ -35,7 +35,7 @@ export default function Hero() {
           <Typewriter text="[ Kevin Patiño ]" />
         
         <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-foreground text-gray-300">
-          Desarrollador web especializado en crear experiencias digitales increíbles
+          Desarrollador web especializado en crear experiencias digitales
         </p>
         <div className="flex flex-col md:flex-row gap-4 justify-center">
           <Link href="#projects">
