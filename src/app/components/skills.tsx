@@ -149,9 +149,9 @@ export default function Skills() {
                   className="rounded-md m-1"
                   style={{ width: '30', height: '30' }}
                   priority />
-                    <Badge key={skill.name} variant="secondary" className="text-lg py-2 px-2">
-                      {/*skill.name*/}
-                    </Badge>
+                    {/*<Badge key={skill.name} variant="secondary" className="text-lg py-2 px-2">
+                      {skill.name}
+                    </Badge>*/}
               </CardContent>
               ))}
             </div>        
