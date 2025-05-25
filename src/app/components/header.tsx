@@ -36,17 +36,15 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 bg-background/30 backdrop-blur-sm transition-transform duration-300 ${
+      className={`fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[40%] max-w-4xl rounded-2xl bg-background/30 backdrop-blur-sm shadow-lg transition-transform duration-300 md:rounded-full ${
         showHeader ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="#home" className="text-2xl font-bold">
-          Kevin Leonardo Patiño Sanchez
-        </Link>
+      <nav className="container  mx-auto px- py-4  flex justify-center items-center">
+        
         <div className="hidden md:flex space-x-4">
           {navItems.map((item) => (
-            <Link key={item.name} href={item.href} className="hover:text-primary transition-colors">
+            <Link key={item.name} href={item.href} className="text-neutral-900 hover:text-amber-50 transition-colors font-bold">
               {item.name}
             </Link>
           ))}
@@ -56,12 +54,12 @@ export default function Header() {
         </button>
       </nav>
       {isOpen && (
-        <div className="md:hidden">
+        <div className="flex justify-center items-center flex-col md:hidden ">
           {navItems.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="block py-2 px-4 hover:bg-accent"
+              className="block my-1 py-2 px-4 hover:bg-accent font-bold rounded-lg"
               onClick={() => setIsOpen(false)}
             >
               {item.name}
