@@ -45,10 +45,10 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-20">
-      <div className="container mx-auto px-4">
+    <section id="contact" className="py-20 ">
+      <div className="container mx-auto px-4 bg-zinc-50 rounded-lg shadow-lg p-8 max-w-2xl">
         <h2 className="text-3xl font-bold mb-8 text-center">Contáctame</h2>
-        <form onSubmit={handleSubmit} className="max-w-md mx-auto">
+        <form onSubmit={handleSubmit} className="max-w-md mx-auto ">
           <div className="mb-4">
             <Input
               type="text"
